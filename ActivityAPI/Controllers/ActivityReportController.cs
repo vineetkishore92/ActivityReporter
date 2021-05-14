@@ -14,13 +14,6 @@ namespace ActivityAPI.Controllers
     {
         private static Dictionary<string, List<Report>> activityData = new Dictionary<string, List<Report>>(); 
 
-        private readonly ILogger<ActivityReportController> _logger;
-
-        public ActivityReportController(ILogger<ActivityReportController> logger)
-        {
-            _logger = logger;
-        }
-
         [HttpGet]
         public int GetActivityCount(string activity)
         {

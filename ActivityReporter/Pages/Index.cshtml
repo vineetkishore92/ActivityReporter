@@ -1,0 +1,36 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+	<h1 class="display-4">Welcome</h1>
+
+	<table align="center" cellpadding="10">
+
+		<!----- Activity Name - [Key] ---------------------------------------------------------->
+		<tr>
+			<td>Activity Name</td>
+			<td>
+				<input type="text" name="ActivityName" maxlength="100"/>
+			</td>
+		</tr>		
+
+		<!----- Event Count ---------------------------------------------------------->
+		<tr>
+			<td>Events</td>
+			<td>
+				<input type="text" name="Events" max="100"/>
+			</td>
+		</tr>
+
+		<!----- Submit and Reset ------------------------------------------------->
+		<tr>
+			<td colspan="2" align="center">
+				<input type="submit" value="Submit">
+				<input type="reset" value="Reset">
+			</td>
+		</tr>
+	</table>
+</div>
